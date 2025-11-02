@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisador de Sentença Trabalhista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- pdf.js for client-side PDF text extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      // Required configuration for pdf.js
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
+    </script>
+    <!-- docx for client-side DOCX generation -->
+    <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+    <!-- file-saver for downloading the generated DOCX -->
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react/": "https://aistudiocdn.com/react@^18.2.0/",
+    "react": "https://aistudiocdn.com/react@^18.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^18.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^18.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

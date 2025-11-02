@@ -1,0 +1,5 @@
+{
+  "name": "Analisador de Sentença Trabalhista",
+  "description": "Uma micro-SaaS para advogados trabalhistas no Brasil. Faça upload de uma sentença em PDF para extrair fatos, identificar lacunas, gerar a próxima petição e sugerir bens para penhora, tudo com o poder da IA.",
+  "requestFramePermissions": []
+}
